@@ -60,8 +60,8 @@ public class AppConfig {
 	private CorsConfigurationSource corsConfigurationSource() {
 		CorsConfiguration cfg = new CorsConfiguration();
 
-		// cfg.setAllowedOrigins(Arrays.asList("http://localhost:3000")); // Địa chỉ front-end
-		cfg.setAllowedOrigins(Arrays.asList(System.getenv("ALLOWED_ORIGINS").split(","))); // Use comma-separated URLs
+		 cfg.setAllowedOrigins(Arrays.asList("http://localhost:3000")); // Địa chỉ front-end
+//		cfg.setAllowedOrigins(Arrays.asList(System.getenv("ALLOWED_ORIGINS").split(","))); // Use comma-separated URLs
 		cfg.setAllowedMethods(Arrays.asList("GET", "POST", "PUT", "DELETE", "PATCH", "OPTIONS")); // Các phương thức HTTP cho
 																							// phép
 		cfg.setAllowCredentials(true); // Cho phép cookie
