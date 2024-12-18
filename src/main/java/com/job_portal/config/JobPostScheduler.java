@@ -15,14 +15,14 @@ public class JobPostScheduler {
 	private IJobPostService jobPostService;
 
 	// Cập nhật file CSV mỗi 5 phút
-	@Scheduled(fixedRate = 300000)
-	public void updateCSV() {
-		try {
-			jobPostService.exportJobPostToCSV("D:\\\\\\\\JobRadar_\\\\\\\\job_post.csv");
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
-	}
+	// @Scheduled(fixedRate = 300000)
+	// public void updateCSV() {
+	// 	try {
+	// 		jobPostService.exportJobPostToCSV("D:\\\\\\\\JobRadar_\\\\\\\\job_post.csv");
+	// 	} catch (IOException e) {
+	// 		e.printStackTrace();
+	// 	}
+	// }
 
 	@Scheduled(cron = "0 0 0 * * ?") // Chạy lúc 12:00 AM mỗi ngày
 	public void updateExpiredJobPosts() {
