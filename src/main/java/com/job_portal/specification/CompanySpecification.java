@@ -7,7 +7,7 @@ import org.springframework.data.jpa.domain.Specification;
 import com.job_portal.DTO.CompanyWithCountJobDTO;
 import com.job_portal.models.Company;
 
-import jakarta.persistence.criteria.Predicate;
+import javax.persistence.criteria.Predicate;
 
 public class CompanySpecification {
 	public static Specification<Company> withFilters(String title, Integer cityId, List<Integer> selectedIndustryIds) {

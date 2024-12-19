@@ -12,7 +12,7 @@ import org.springframework.data.repository.query.Param;
 import com.job_portal.models.ForgotPassword;
 import com.job_portal.models.UserAccount;
 
-import jakarta.transaction.Transactional;
+import javax.transaction.Transactional;
 
 public interface ForgotPasswordRepository extends JpaRepository<ForgotPassword, Integer> {
 	@Modifying

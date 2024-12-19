@@ -5,7 +5,7 @@ import org.springframework.data.jpa.domain.Specification;
 import com.job_portal.models.JobPost;
 import com.opencsv.CSVWriter;
 
-import jakarta.persistence.criteria.Predicate;
+import javax.persistence.criteria.Predicate;
 
 import java.io.File;
 import java.io.FileWriter;

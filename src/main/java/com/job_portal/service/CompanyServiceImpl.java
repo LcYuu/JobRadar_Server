@@ -26,7 +26,7 @@ import com.job_portal.repository.JobPostRepository;
 import com.job_portal.repository.SeekerRepository;
 import com.social.exceptions.AllExceptions;
 
-import jakarta.persistence.EntityNotFoundException;
+import javax.persistence.EntityNotFoundException;
 
 @Service
 public class CompanyServiceImpl implements ICompanyService {

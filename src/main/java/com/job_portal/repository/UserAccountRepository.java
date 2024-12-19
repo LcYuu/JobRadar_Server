@@ -14,7 +14,7 @@ import org.springframework.data.repository.query.Param;
 
 import com.job_portal.models.UserAccount;
 
-import jakarta.transaction.Transactional;
+import javax.transaction.Transactional;
 
 public interface UserAccountRepository extends JpaRepository<UserAccount, UUID> {
 	public Optional<UserAccount> findByEmail(String email);

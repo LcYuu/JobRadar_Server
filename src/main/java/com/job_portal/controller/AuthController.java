@@ -60,7 +60,7 @@ import com.job_portal.service.AccountDetailServiceImpl;
 import com.job_portal.utils.EmailUtil;
 import com.job_portal.utils.OtpUtil;
 import com.job_portal.service.TaxCodeValidation;
-import jakarta.mail.MessagingException;
+import javax.mail.MessagingException;
 
 @RestController
 @RequestMapping("/auth")
