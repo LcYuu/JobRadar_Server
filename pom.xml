@@ -56,7 +56,7 @@
 		<dependency>
 			<groupId>mysql</groupId>
 			<artifactId>mysql-connector-java</artifactId>
-			<version>8.0.30</version> <!-- Thay đổi phiên bản theo nhu cầu -->
+			<version>8.0.33</version> <!-- Thay đổi phiên bản theo nhu cầu -->
 		</dependency>
 <!--		<dependency>-->
 <!--			<groupId>com.mysql</groupId>-->
